@@ -1015,9 +1015,6 @@ class PiwikTracker
         }
         $this->cookieVisitorId = $parts[0]; // provides backward compatibility since getVisitorId() didn't change any existing VisitorId value
         $this->createTs = $parts[1];
-        $this->visitCount = (int)$parts[2];
-        $this->currentVisitTs = $parts[3];
-        $this->lastVisitTs = $parts[4];
         if(isset($parts[5])) {
             $this->lastEcommerceOrderTs = $parts[5];
         }
